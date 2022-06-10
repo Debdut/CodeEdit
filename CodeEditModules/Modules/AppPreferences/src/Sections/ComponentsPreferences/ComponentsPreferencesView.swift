@@ -4,7 +4,7 @@
 //
 //  Created by Debdut Karmakar on 6/10/22.
 //
-
+import Foundation
 import SwiftUI
 import Preferences
 
@@ -16,12 +16,21 @@ public struct ComponentsPreferencesView: View {
         PreferencesContent {
             PreferencesSection("Command Line Tools") {
                 HStack {
-                    Button(action: {}, label: {
-                        Text("Install")
-                    })
+                    if ComponentsPreferences.cliInstalled {
+                        Text("Already installed!")
+                    } else {
+                        Button(action: { .installTool() }, label: {
+                            Text("Install")
+                        })
+                    }
                 }
             }
         }
+    }
+    
+    private func installTool() {
+        Swift.print("OK")
+        ComponentsPreferences.cliInstalled = true
     }
 }
 
