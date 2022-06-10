@@ -256,7 +256,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
                 title: "Components",
                 toolbarIcon: NSImage(systemSymbolName: "puzzlepiece", accessibilityDescription: nil)!
             ) {
-                PreferencesPlaceholderView()
+                ComponentsPreferencesView()
             },
             Preferences.Pane(
                 identifier: Preferences.PaneIdentifier("Locations"),
