@@ -82,6 +82,10 @@
 		5CA8776527FC6A95003F5CD5 /* QuickOpen in Frameworks */ = {isa = PBXBuildFile; productRef = 5CA8776427FC6A95003F5CD5 /* QuickOpen */; };
 		5CAD1B972806B57D0059A74E /* Breadcrumbs in Frameworks */ = {isa = PBXBuildFile; productRef = 5CAD1B962806B57D0059A74E /* Breadcrumbs */; };
 		5CF38A5E27E48E6C0096A0F7 /* CodeFile in Frameworks */ = {isa = PBXBuildFile; productRef = 5CF38A5D27E48E6C0096A0F7 /* CodeFile */; };
+		615A7ADA28537F7D0035DA78 /* ToolInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 615A7AD828537F7D0035DA78 /* ToolInstaller.m */; };
+		615A7AE22853806F0035DA78 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615A7AE12853806F0035DA78 /* main.swift */; };
+		615A7AE82853815C0035DA78 /* install.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 615A7AE62853809A0035DA78 /* install.sh */; };
+		615A7AE92853816A0035DA78 /* codeedit in CopyFiles */ = {isa = PBXBuildFile; fileRef = 615A7ADF2853806F0035DA78 /* codeedit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		61C33233285241D000EBB59D /* String+SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C33232285241D000EBB59D /* String+SHA256.swift */; };
 		64B64EDE27F7B79400C400F1 /* About in Frameworks */ = {isa = PBXBuildFile; productRef = 64B64EDD27F7B79400C400F1 /* About */; };
 		6C05A8AF284D0CA3007F4EAA /* WorkspaceDocument+Listeners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C05A8AE284D0CA3007F4EAA /* WorkspaceDocument+Listeners.swift */; };
@@ -155,6 +159,26 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		615A7ADD2853806F0035DA78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		615A7AE7285381390035DA78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+				615A7AE92853816A0035DA78 /* codeedit in CopyFiles */,
+				615A7AE82853815C0035DA78 /* install.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +241,12 @@
 		2BE487EE28245162003F3F64 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		2BE487F028245162003F3F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C4BB1E028212B1E00A92FB2 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		615A7AD728537F7D0035DA78 /* CodeEdit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeEdit-Bridging-Header.h"; sourceTree = "<group>"; };
+		615A7AD828537F7D0035DA78 /* ToolInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolInstaller.m; path = ../../../../../Temp/ToolInstaller.m; sourceTree = "<group>"; };
+		615A7AD928537F7D0035DA78 /* ToolInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolInstaller.h; path = ../../../../../Temp/ToolInstaller.h; sourceTree = "<group>"; };
+		615A7ADF2853806F0035DA78 /* codeedit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codeedit; sourceTree = BUILT_PRODUCTS_DIR; };
+		615A7AE12853806F0035DA78 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		615A7AE62853809A0035DA78 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.sh; path = CodeEdit/install.sh; sourceTree = SOURCE_ROOT; };
 		61C33232285241D000EBB59D /* String+SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SHA256.swift"; sourceTree = "<group>"; };
 		6C05A8AE284D0CA3007F4EAA /* WorkspaceDocument+Listeners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkspaceDocument+Listeners.swift"; sourceTree = "<group>"; };
 		6CDA84AA284C0E4A00C1CC3A /* TabBarItemButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemButtonStyle.swift; sourceTree = "<group>"; };
@@ -248,6 +278,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		2BE487E928245162003F3F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		615A7ADC2853806F0035DA78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,11 +542,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		615A7AE02853806F0035DA78 /* codeedit */ = {
+			isa = PBXGroup;
+			children = (
+				615A7AE12853806F0035DA78 /* main.swift */,
+				615A7AE62853809A0035DA78 /* install.sh */,
+			);
+			path = codeedit;
+			sourceTree = "<group>";
+		};
 		B658FB2327DA9E0F00EA4DBD = {
 			isa = PBXGroup;
 			children = (
 				B658FB2E27DA9E0F00EA4DBD /* CodeEdit */,
 				2BE487ED28245162003F3F64 /* OpenWithCodeEdit */,
+				615A7AE02853806F0035DA78 /* codeedit */,
 				B658FB2D27DA9E0F00EA4DBD /* Products */,
 				5C403B8D27E20F8000788241 /* Frameworks */,
 			);
@@ -524,6 +571,7 @@
 				B658FB3D27DA9E1000EA4DBD /* CodeEditTests.xctest */,
 				B658FB4727DA9E1000EA4DBD /* CodeEditUITests.xctest */,
 				2BE487EC28245162003F3F64 /* OpenWithCodeEdit.appex */,
+				615A7ADF2853806F0035DA78 /* codeedit */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -544,9 +592,12 @@
 				B658FB3827DA9E1000EA4DBD /* CodeEdit.entitlements */,
 				04660F6027E3A68A00477777 /* Info.plist */,
 				043C321927E32295006AE443 /* MainMenu.xib */,
+				615A7AD928537F7D0035DA78 /* ToolInstaller.h */,
+				615A7AD828537F7D0035DA78 /* ToolInstaller.m */,
 				B658FB3127DA9E0F00EA4DBD /* WorkspaceView.swift */,
 				FD6A3D3C2817C13B008BCF11 /* Package.resolved */,
 				28069DA527F5BD320016BC47 /* DefaultThemes */,
+				615A7AD728537F7D0035DA78 /* CodeEdit-Bridging-Header.h */,
 			);
 			path = CodeEdit;
 			sourceTree = "<group>";
@@ -610,6 +661,24 @@
 			productName = OpenWithCodeEdit;
 			productReference = 2BE487EC28245162003F3F64 /* OpenWithCodeEdit.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		615A7ADE2853806F0035DA78 /* codeedit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 615A7AE32853806F0035DA78 /* Build configuration list for PBXNativeTarget "codeedit" */;
+			buildPhases = (
+				615A7ADB2853806F0035DA78 /* Sources */,
+				615A7ADC2853806F0035DA78 /* Frameworks */,
+				615A7ADD2853806F0035DA78 /* CopyFiles */,
+				615A7AE7285381390035DA78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = codeedit;
+			productName = codeedit;
+			productReference = 615A7ADF2853806F0035DA78 /* codeedit */;
+			productType = "com.apple.product-type.tool";
 		};
 		B658FB2B27DA9E0F00EA4DBD /* CodeEdit */ = {
 			isa = PBXNativeTarget;
@@ -700,14 +769,18 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					2BE487EB28245162003F3F64 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					615A7ADE2853806F0035DA78 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					B658FB2B27DA9E0F00EA4DBD = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1340;
 					};
 					B658FB3C27DA9E1000EA4DBD = {
 						CreatedOnToolsVersion = 13.1;
@@ -740,6 +813,7 @@
 				B658FB3C27DA9E1000EA4DBD /* CodeEditTests */,
 				B658FB4627DA9E1000EA4DBD /* CodeEditUITests */,
 				2BE487EB28245162003F3F64 /* OpenWithCodeEdit */,
+				615A7ADE2853806F0035DA78 /* codeedit */,
 			);
 		};
 /* End PBXProject section */
@@ -887,6 +961,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		615A7ADB2853806F0035DA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				615A7AE22853806F0035DA78 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B658FB2827DA9E0F00EA4DBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -917,6 +999,7 @@
 				200412EF280F3EAC00BCAF5C /* NoCommitHistoryView.swift in Sources */,
 				043C321427E31FF6006AE443 /* CodeEditDocumentController.swift in Sources */,
 				20EBB503280C327C00F3A5DA /* HistoryInspector.swift in Sources */,
+				615A7ADA28537F7D0035DA78 /* ToolInstaller.m in Sources */,
 				2072FA1A280D872600C7F8D4 /* LineEndings.swift in Sources */,
 				201169E22837B3D800F92B46 /* ChangesView.swift in Sources */,
 				20EBB507280C32D300F3A5DA /* QuickHelpInspector.swift in Sources */,
@@ -1065,6 +1148,26 @@
 			};
 			name = Release;
 		};
+		615A7AE42853806F0035DA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		615A7AE52853806F0035DA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B658FB4F27DA9E1000EA4DBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1190,6 +1293,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeEdit/CodeEdit.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1213,6 +1317,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeEdit/CodeEdit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1223,6 +1329,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeEdit/CodeEdit.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -1246,6 +1353,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeEdit/CodeEdit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1354,6 +1462,15 @@
 			buildConfigurations = (
 				2BE487F628245162003F3F64 /* Debug */,
 				2BE487F728245162003F3F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		615A7AE32853806F0035DA78 /* Build configuration list for PBXNativeTarget "codeedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				615A7AE42853806F0035DA78 /* Debug */,
+				615A7AE52853806F0035DA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
