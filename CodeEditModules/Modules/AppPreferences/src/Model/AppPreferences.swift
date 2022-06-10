@@ -37,8 +37,11 @@ public struct AppPreferences: Codable {
     /// The global settings for text editing
     public var textEditing: TextEditingPreferences = .init()
 
-    /// The global settings for text editing
+    /// The global settings for source control
     public var sourceControl: SourceControlPreferences = .init()
+    
+    /// The global settings for components
+    public var components: ComponentsPreferences = .init()
 
     /// Default initializer
     public init() {}
@@ -53,5 +56,7 @@ public struct AppPreferences: Codable {
         self.textEditing = try container.decodeIfPresent(TextEditingPreferences.self, forKey: .textEditing) ?? .init()
         self.sourceControl = try container.decodeIfPresent(SourceControlPreferences.self,
                                                            forKey: .sourceControl) ?? .init()
+        self.components = try container.decodeIfPresent(ComponentsPreferences.self,
+                                                           forKey: .components) ?? .init()
     }
 }
